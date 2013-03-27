@@ -1,5 +1,5 @@
 {
-    "hash": "88f0f9cd6d5217fd7c7aa57c8f9fa0ef",
+    "hash": "0e5c8d165826dd8ec7fb4c1537c8d8b8",
     "packages": [
         {
             "name": "florianwolters/component-core-cloneable",
@@ -148,55 +148,6 @@
                 "immutable object"
             ],
             "time": "2013-03-19 16:50:12"
-        },
-        {
-            "name": "florianwolters/component-util-singleton",
-            "version": "v0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FlorianWolters/PHP-Component-Util-Singleton",
-                "reference": "v0.3.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/FlorianWolters/PHP-Component-Util-Singleton/archive/v0.3.0.zip",
-                "reference": "v0.3.0",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "FlorianWolters": [
-                        "src/php",
-                        "src/tests/unit-tests/php",
-                        "src/tests/mocks/php"
-                    ]
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0+"
-            ],
-            "authors": [
-                {
-                    "name": "Florian Wolters",
-                    "email": "wolters.fl@gmail.com",
-                    "homepage": "http://blog.florianwolters.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "The Singleton (and Registry of Singletons a.k.a. Multiton) design pattern as a simple-to-use component.",
-            "homepage": "http://github.com/FlorianWolters/PHP-Component-Util-Singleton",
-            "keywords": [
-                "creation",
-                "pattern",
-                "singleton",
-                "utility"
-            ],
-            "time": "2012-12-13 10:51:32"
         }
     ],
     "packages-dev": [
