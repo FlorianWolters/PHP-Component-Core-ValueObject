@@ -27,6 +27,10 @@ class ValueObjectTraitTest extends \PHPUnit_Framework_TestCase
     private $usedTraitNames;
 
     /**
+     * Sets up the fixture.
+     *
+     * This method is called before a test is executed.
+     *
      * @return void
      */
     public function setUp()
