@@ -2,7 +2,7 @@
 
 [![Build Status](https://secure.travis-ci.org/FlorianWolters/PHP-Component-Core-ValueObject.png?branch=master)](http://travis-ci.org/FlorianWolters/PHP-Component-Core-ValueObject)
 
-**FlorianWolters\Component\Core\ValueObject** is a simple-to-use [PHP][17] component that implements the **Value Object** implementation pattern.
+**FlorianWolters\Component\Core\ValueObject** is a simple-to-use [PHP][17] component that implements the *Value Object* implementation pattern.
 
 ## Features
 
