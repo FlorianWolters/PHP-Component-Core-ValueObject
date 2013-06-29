@@ -1,6 +1,8 @@
 <?php
 namespace FlorianWolters;
 
+use \InvalidArgumentException;
+
 use FlorianWolters\Component\Core\ImmutableException;
 use FlorianWolters\Mock\Paint;
 
@@ -46,8 +48,6 @@ final class ValueObjectExample
         \var_dump($paint->equals($otherPaint));
         \var_dump($paint->equals(new Paint(255, 255, 255)));
         \var_dump($paint->equals(new Paint(255, 255, 0)));
-        // TODO Type Juggling is used here. If the value object is self-validating this is NOT a problem, otherwise is IS a problem.
-//        \var_dump($paint->equals(new Paint(255, 255, null)));
 
         $mixedPaint = $paint->mix(new Paint(0, 0, 0));
         \var_dump($mixedPaint->equals($otherPaint));
@@ -56,6 +56,13 @@ final class ValueObjectExample
         try {
             $paint->foo = 'foo';
         } catch (ImmutableException $ex) {
+        }
+
+        try {
+            // Watch out for PHPs "Type Juggling" mechanism. If the value object
+            // is self-validating this is not a problem, otherwise is is.
+            $paint->equals(new Paint(255, 255, null));
+        } catch (InvalidArgumentException $ex) {
         }
     }
 }
